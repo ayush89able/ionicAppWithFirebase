@@ -1,0 +1,38 @@
+page-login {
+    .error_password{
+        color: red;
+    }
+}
+
+.scroll-content{
+    background: #FC466B !important;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B) !important;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+form{
+    display: block;
+    margin: auto;
+}
+
+ion-card{
+    display: block !important;
+    margin: auto !important;
+    width: 70% !important;
+    margin-top: 5em !important;
+}
+
+button{
+    display:  block !important;
+    margin: auto !important;
+}
+
+.SignupBtn{
+    margin-top: 1em !important;
+}
+
+.loginBtn{
+    margin-top: 1em !important;
+}
+
+

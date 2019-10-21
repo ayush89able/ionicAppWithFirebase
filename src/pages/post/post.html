@@ -1,0 +1,38 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>Create a post</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+
+<ion-content padding class='background'>
+
+  <h5>  Welcome {{username}}</h5>
+  <form  [formGroup]="postForm" (submit)="addPostIdToProvider()">
+    <ion-card class='background-card'>
+    <ion-card-header >
+      <ion-label>Post Title</ion-label>
+      <ion-input floating  formControlName="postTitle" class='outline'></ion-input>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-label>Post Body</ion-label>
+      <ion-textarea floating  formControlName="postBody" class='outline'></ion-textarea>
+     
+
+    <button ion-button >Post</button>
+
+  </ion-card-content>
+  </ion-card>
+  </form>
+
+  <button ion-button (click)='onClickWatchMyPosts()' class="showPostBtn">Show My Posts</button>
+</ion-content>
+<!-- <ion-nav [root]="rootPage"></ion-nav> -->
+
+<!-- <ion-tabs>
+        <ion-tab tabIcon="reorder" tabTitle="Posts"[root]="tab1Root"></ion-tab>
+        <ion-tab tabIcon="log-in" tabTitle="All Posts" [root]="tab2Root"></ion-tab>
+        <ion-tab tabIcon="contact" tabTitle="Profile" [root]="tab3Root"></ion-tab>
+       
+      </ion-tabs> -->

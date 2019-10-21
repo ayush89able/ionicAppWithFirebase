@@ -1,0 +1,29 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>Image upload</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+
+<ion-content padding class='background'>
+
+    <ion-item class='card'>
+        <p><b>Select a photo and it will be uploaded</b></p>
+        <br>
+        Upload Logo
+        <image-upload [max]="1" [buttonCaption]="'Select Logo'" [dropBoxMessage]="''" [extensions]="['jpg','png']" (uploadFinished)="onImageSelect($event, 'logo')"
+          (removed)="onImgRemoved($event)"></image-upload>
+      </ion-item>
+    
+      <ion-item class='card'>
+        Upload Profile image
+        <image-upload [max]="1" [buttonCaption]="'Select image'" [dropBoxMessage]="''" [extensions]="['jpg','png']" (uploadFinished)="onImageSelect($event, 'backgroundImage')"
+          (removed)="onImgRemoved($event)"></image-upload>
+      </ion-item>
+      <br>
+
+      <button ion-button (click)="done()" color='primary'>Save</button>
+
+    
+
+</ion-content>

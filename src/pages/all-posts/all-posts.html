@@ -1,0 +1,22 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>All Posts</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content class="background">
+  
+
+    <ion-card *ngFor="let post of allPostData">
+      <ion-card-header class='header'>
+        <!-- <p>Name=<b>{{post.Name}}</b></p> -->
+        <h5 align="center">{{post.PostTitle}}</h5>
+      </ion-card-header>
+      <ion-card-content class='content'>
+        <p>{{post.PostBody}}</p>
+        <p style="text-align: right">By- <b>{{post.Name}}</b></p>
+      </ion-card-content>
+    </ion-card>
+      
+
+</ion-content>
